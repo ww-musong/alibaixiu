@@ -63,6 +63,8 @@ $('#filterForm').on('submit', function () {
 	return false;
 });
 
+
+
 // 当删除按钮被点击的时候
 $('#postsBox').on('click', '.delete', function () {
 	// 弹出删除确认框 和管理员确认是否真的要进行删除操作
