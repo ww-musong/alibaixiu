@@ -36,8 +36,9 @@ $('#addCategory').on('submit', function () {
 		type: 'post',
 		url: '/categories',
 		data: formData,
-		success: function () {
-			location.reload();
+		success: function (response) {
+			console.log(response);
+			
 		}
 	})
 	// 阻止表单默认提交行为
