@@ -81,3 +81,6 @@ $('#postsBox').on('click', '.delete', function () {
 		})
 	}
 });
+
+
+

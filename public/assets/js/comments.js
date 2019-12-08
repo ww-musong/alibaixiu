@@ -63,3 +63,9 @@ $('#commentsBox').on('click', '.delete', function () {
 		})
 	}
 });
+
+
+
+
+
+

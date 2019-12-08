@@ -21,7 +21,7 @@
       <button class="btn btn-default navbar-btn fa fa-bars"></button>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="password-reset.html"><i class="fa fa-user"></i>修改密码</a></li>
-        <li><a href="javascript:;"><i class="fa fa-sign-out"></i>退出</a></li>
+        <li><a href="/admin/login.html"><i class="fa fa-sign-out"></i>退出</a></li>
       </ul>
     </nav>
     <div class="container-fluid">
@@ -100,7 +100,7 @@
       <td>{{$value.author.nickName}}</td>
       <td>{{$value.content}}</td>
       <td>{{$value.post.title}}</td>
-      <td>{{$value.createAt}}</td>
+      <td>{{$imports.formateDate($value.createAt)}}</td>
       <td>{{$value.state == 0 ? '未审核' : '已批准'}}</td>
       <td class="text-center">
         <a href="javascript:;" class="btn btn-info btn-xs status" data-status="{{$value.state}}" data-id="{{$value._id}}">
