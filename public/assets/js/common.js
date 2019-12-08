@@ -12,7 +12,7 @@ function formateDate(date) {
   // 向服务器端发送请求 索要登录用户信息
   $.ajax({
 	type: 'get',
-	url: '/users/' + userId ,
+	url: '/users/',
 	success: function (response) {
 	  $('.avatar').attr('src', response.avatar)
 	  $('.profile .name').html(response.nickName)
