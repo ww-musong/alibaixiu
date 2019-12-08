@@ -20,7 +20,7 @@ $('#article').on('click', '#like', function () {
 		type: 'post',
 		url: '/posts/fabulous/' + postId,
 		success: function () {
-			alert('点赞成功, 感谢您的支持')
+			alert('吴万温馨提醒:点赞成功')
 		}
 	})
 })
